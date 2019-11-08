@@ -1,0 +1,11 @@
+<template>
+    <lightning-card>
+        <div class="slds-m-around_medium">
+            <lightning-combobox name="progress" label="Status" value={fieldValue} placeholder="Select Progress"
+                options={options} onchange={handleChange}></lightning-combobox> 
+            <div class='slds-box slds-theme_default custom-background'>
+                <canvas class="barChart" width="800" height="450"></canvas>
+            </div>
+        </div>
+    </lightning-card>
+</template>
